@@ -1,49 +1,54 @@
-import { useEffect } from 'react';
-import Head from 'next/head';
+import { useEffect, useRef } from "react";
+import Head from "next/head";
+//= Scripts
+import navbarScrollEffect from "@common/navbarScrollEffect";
 //= Layout
-import PreviewLayout from '@layouts/Preview';
+import MainLayout from "@layouts/Main";
 //= Components
-import Header from '@components/Preview/Header';
-import Features from '@components/Preview/Features';
-import Demos from '@components/Preview/Demos';
-import InnerPages from '@components/Preview/InnerPages';
-import BuyNow from '@components/Preview/BuyNow';
-import Portfolio from '@components/Preview/Portfolio';
-import Codei from '@components/Preview/Codei';
-import BestFeatures from '@components/Preview/BestFeatures';
-import Responsive from '@components/Preview/Responsive';
-import AllFeatures from '@components/Preview/AllFeatures';
-import Testimonials from '@components/Preview/Testimonials';
-import CallToAction from '@components/Preview/CallToAction';
+import TopNav from "@components/Navbars/TopNav";
+import Navbar from "@components/Navbars/AppNav/OnePageNav";
+import Header from "@components/App/Header";
+import Clients from "@components/App/Clients";
+import Features from "@components/App/Features";
+import About from "@components/App/About";
+import Screenshots from "@components/App/Screenshots";
+import Testimonials from "@components/App/Testimonials";
+import Pricing from "@components/App/Pricing";
+import FAQ from "@components/App/FAQ";
+import Community from "@components/App/Community";
+import Footer from "@components/App/Footer";
 
-const LandingPreview = () => {
+const HomeAppLandingOnePage = () => {
+  const navbarRef = useRef(null);
+
   useEffect(() => {
-    document.body.classList.add('index-main');
-    return () => document.body.classList.remove('index-main');
-  }, []);
+    navbarScrollEffect(navbarRef.current);
+  }, [navbarRef]);
 
   return (
     <>
       <Head>
-        <title>Iteck - Preview</title>
+        <title>Smavy - Курсы программирования в новом формате</title>
       </Head>
 
-      <PreviewLayout>
+      <MainLayout>
+        <TopNav style="4" />
+        <Navbar navbarRef={navbarRef} />
         <Header />
-        <Features />
-        <Demos />
-        <InnerPages />
-        <BuyNow />
-        <Portfolio />
-        <Codei />
-        <BestFeatures />
-        <Responsive />
-        <AllFeatures />
-        <Testimonials />
-        <CallToAction />
-      </PreviewLayout>
+        <main>
+          <Clients />
+          <Features />
+          <About />
+          <Screenshots />
+          <Testimonials />
+          <Pricing />
+          <FAQ />
+          <Community />
+        </main>
+        <Footer />
+      </MainLayout>
     </>
-  )
-}
+  );
+};
 
-export default LandingPreview;
+export default HomeAppLandingOnePage;
