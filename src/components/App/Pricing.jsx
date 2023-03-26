@@ -1,4 +1,3 @@
-import Link from "next/link";
 import plans from "@data/App/plans.json";
 import plansRTL from "@data/App/plans-rtl.json";
 

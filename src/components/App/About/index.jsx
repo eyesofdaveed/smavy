@@ -2,10 +2,8 @@ import aboutData from "@data/App/about.json";
 import aboutDataRTL from "@data/App/about-rtl.json";
 import FirstContent from "./FirstContent";
 import SecondContent from "./SecondContent";
-import ThirdContent from "./ThirdContent";
-import Integration from "./Integration";
 
-const About = ({ noFirstContent, noIntegration, noWave, rtl }) => {
+const About = ({ noFirstContent, noWave, rtl }) => {
   const data = rtl ? aboutDataRTL : aboutData;
 
   return (
