@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Link from "next/link";
 import scrollToSection from "@common/scrollToSection";
 
 const OnePageNav = ({ navbarRef }) => {
@@ -84,9 +85,9 @@ const OnePageNav = ({ navbarRef }) => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/contacts">
+              <Link className="nav-link" href="/contacts">
                 {"Контакты"}
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
