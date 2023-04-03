@@ -5,11 +5,11 @@ const Community = () => {
     <section className="community section-padding style-5">
       <div className="container">
         <div className="section-head text-center style-4 mb-40">
-          <small className="title_small">Contact us</small>
+          <small className="title_small">Связь с нами</small>
           <h2 className="mb-20">
-            Get In <span>Touch</span>{" "}
+            Наши <span>Контакты</span>{" "}
           </h2>
-          <p>We will contact again after receive your request in 24h</p>
+          <p>Мы свяжемся с вами как только сможем в течении 24 часов</p>
         </div>
         <div className="content rounded-pill">
           {communityData.map((card, i) => (

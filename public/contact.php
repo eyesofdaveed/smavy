@@ -1,18 +1,18 @@
 <?php
 
 // configure
-$from = 'Demo contact form <demo@domain.com>';
-$sendTo = 'Test contact form <youremail@gmail.com>'; // Add Your Email
-$subject = 'New message from contact form';
-$fields = array('name' => 'Name', 'email' => 'Email',  'phone' => 'Phone', 'website' => 'Website', 'subject' => 'Subject', 'message' => 'Message', 'option' => 'Option'); // array variable name => Text to appear in the email
-$okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!.';
-$errorMessage = 'There was an error while submitting the form. Please try again later';
+$from = 'smavyip@gmail.com';
+$sendTo = 'smavyip@gmail.com'; // Add Your Email
+$subject = 'Новая форма обратной связи';
+$fields = array('name' => 'Name', 'email' => 'Email',  'phone' => 'Phone', 'subject' => 'Subject', 'option' => 'Option'); // array variable name => Text to appear in the email
+$okMessage = 'Контактная форма успешно отправлена. Спасибо, мы свяжемся с вами в ближайшее время!';
+$errorMessage = 'Произошла ошибка при отправке формы. Пожалуйста, попробуйте еще раз позже.';
 
 // let's do the sending
 
 try
 {
-    $emailText = "You have new message from contact form\n=============================\n";
+    $emailText = "Новая заявка на обратную связь\n=============================\n";
 
     foreach ($_POST as $key => $value) {
 

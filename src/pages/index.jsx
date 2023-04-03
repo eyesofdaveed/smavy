@@ -15,8 +15,9 @@ import Screenshots from "@components/App/Screenshots";
 import Testimonials from "@components/App/Testimonials";
 import Pricing from "@components/App/Pricing";
 import FAQ from "@components/App/FAQ";
-import Community from "@components/App/Community";
+import Community from "@components/Contact/Community";
 import Footer from "@components/App/Footer";
+import Form from "@components/Contact/Form";
 
 const HomeAppLandingOnePage = () => {
   const navbarRef = useRef(null);
@@ -44,6 +45,7 @@ const HomeAppLandingOnePage = () => {
           <Pricing />
           <FAQ />
           <Community />
+          <Form />
         </main>
         <Footer />
       </MainLayout>
