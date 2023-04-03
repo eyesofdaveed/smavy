@@ -45,13 +45,6 @@ const Pricing = ({ rtl }) => {
                       ))}
                     </ul>
                   </div>
-                  {plan.off && (
-                    <div className="off">
-                      <span>
-                        {plan.off} <br /> {"скидка"}
-                      </span>
-                    </div>
-                  )}
                 </div>
               </div>
             ))}
