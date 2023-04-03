@@ -68,6 +68,16 @@ const OnePageNav = ({ navbarRef }) => {
               <a
                 className="nav-link"
                 href="#0"
+                data-scroll-nav="2"
+                onClick={scrollToSection}
+              >
+                {"Курсы"}
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                href="#0"
                 data-scroll-nav="5"
                 onClick={scrollToSection}
               >

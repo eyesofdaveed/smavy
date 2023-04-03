@@ -34,7 +34,7 @@ const Footer = ({ noWave, rtl }) => {
           </h2>
           <p>
             {
-              "Discover your new favorite spaces, from Sao Paulo to Seoul. Download from App Store or Google Play."
+              "Раскрой свой потенциал и начни свою новую карьеру с нашими продвинутыми курсами."
             }
           </p>
         </div>
@@ -48,33 +48,28 @@ const Footer = ({ noWave, rtl }) => {
             <div className="col-lg-8">
               <ul className="links">
                 <li>
-                  <Link href="/home-app-landing">
-                    <a className="active">{"Home"}</a>
+                  <Link href="/">
+                    <a className="active">{"Главная"}</a>
                   </Link>
                 </li>
                 <li>
                   <Link href="/page-about-5">
-                    <a>{"about"}</a>
+                    <a>{"О нас"}</a>
                   </Link>
                 </li>
                 <li>
                   <Link href="/page-portfolio-5">
-                    <a>{"portfolio"}</a>
+                    <a>{"Курсы"}</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/page-portfolio-5">
+                    <a>{"Отзывы"}</a>
                   </Link>
                 </li>
                 <li>
                   <Link href="/page-services-5">
-                    <a>{"services"}</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/page-blog-5">
-                    <a>{"blog"}</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/page-contact-5">
-                    <a>{"contact"}</a>
+                    <a>{"Прайс"}</a>
                   </Link>
                 </li>
               </ul>
