@@ -9,11 +9,7 @@ const loadingPace = () => {
 
   document.addEventListener("load", () => preloader.classList.add("isdone"));
 
-  if (typeof Pace === "undefined") return;
-
-  Pace.on("start", () => preloader.classList.remove("isdone"));
-
-  Pace.on("done", () => preloader.classList.add("isdone"));
+  setTimeout(() => preloader.classList.add("isdone"), 1000);
 };
 
 export default loadingPace;
