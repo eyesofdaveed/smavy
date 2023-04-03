@@ -12,8 +12,7 @@ const MainLayout = ({ children, scrollTopText }) => {
         <link rel="stylesheet" href="/assets/css/lib/bootstrap.min.css" />
         <link rel="stylesheet" href="/assets/css/style.css" />
       </Head>
-      {/* 
-      <PreLoader /> */}
+      <PreLoader />
       {children}
       <ScrollToTop topText={scrollTopText} />
     </>

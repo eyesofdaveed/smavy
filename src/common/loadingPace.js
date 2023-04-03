@@ -3,8 +3,9 @@ const loadingPace = () => {
 
   if (!preloader) return;
 
-  if (document.body.classList.contains("pace-done"))
-    preloader.classList.add("isdone");
+  if (document.body.classList.contains("pace-done")) {
+    return preloader.classList.add("isdone");
+  }
 
   document.addEventListener("load", () => preloader.classList.add("isdone"));
 
