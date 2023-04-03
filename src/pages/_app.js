@@ -18,6 +18,7 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
 
       <Script
+        data-pace-options='{ "ajax": false, "restartOnRequestAfter": false, "document": false, "eventLag": false }'
         strategy="beforeInteractive"
         src="/assets/js/lib/pace.js"
       ></Script>
