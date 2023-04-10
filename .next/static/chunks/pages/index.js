@@ -2336,7 +2336,7 @@ module.exports = JSON.parse('[{"id":1,"question":"Какие языки прог
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 "use strict";
-module.exports = JSON.parse('[{"image":"/assets/img/icons/react.jpeg","title":{"text1":"Frontend Development","text2":"ReactJs"}},{"image":"/assets/img/icons/next.png","title":{"text1":"Fullstack Development","text2":"NextJs"}},{"image":"/assets/img/icons/golang.webp","title":{"text1":"Backend Development","text2":"GoLang"},"new":true},{"image":"/assets/img/icons/android.jpeg","title":{"text1":"Mobile Development","text2":"Android"}},{"image":"/assets/img/icons/flutter.jpeg","title":{"text1":"Mobile Development","text2":"Flutter"}},{"image":"/assets/img/icons/python.webp","title":{"text1":"Data Analysis","text2":"Python"},"new":true}]');
+module.exports = JSON.parse('[{"image":"/assets/img/icons/react.jpeg","title":{"text1":"Frontend Development","text2":"ReactJs"}},{"image":"/assets/img/icons/next.png","title":{"text1":"Fullstack Development","text2":"NextJs"}},{"image":"/assets/img/icons/golang.webp","title":{"text1":"Backend Development","text2":"GoLang"}},{"image":"/assets/img/icons/android.jpeg","title":{"text1":"Mobile Development","text2":"Android"}},{"image":"/assets/img/icons/flutter.jpeg","title":{"text1":"Mobile Development","text2":"Flutter"}},{"image":"/assets/img/icons/python.webp","title":{"text1":"Data Analysis","text2":"Python"}}]');
 
 /***/ }),
 

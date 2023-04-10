@@ -18,8 +18,7 @@
     "title": {
       "text1": "Backend Development",
       "text2": "GoLang"
-    },
-    "new": true
+    }
   },
   {
     "image": "/assets/img/icons/android.jpeg",
@@ -40,7 +39,6 @@
     "title": {
       "text1": "Data Analysis",
       "text2": "Python"
-    },
-    "new": true
+    }
   }
 ]
