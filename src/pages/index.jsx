@@ -36,7 +36,7 @@ const HomeAppLandingOnePage = () => {
         <TopNav style="4" />
         <Navbar navbarRef={navbarRef} />
         <Header />
-        <main>
+        <main style={{ marginTop: "-12px" }}>
           <Clients />
           <Features />
           <About />

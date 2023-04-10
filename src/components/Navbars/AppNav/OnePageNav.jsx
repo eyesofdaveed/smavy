@@ -68,7 +68,7 @@ const OnePageNav = ({ navbarRef }) => {
               <a
                 className="nav-link"
                 href="#courses"
-                data-scroll-nav="2"
+                data-scroll-nav="1"
                 onClick={scrollToSection}
               >
                 {"Курсы"}
@@ -98,7 +98,7 @@ const OnePageNav = ({ navbarRef }) => {
               <a
                 className="nav-link"
                 href="#contact"
-                data-scroll-nav="6"
+                data-scroll-nav="8"
                 onClick={scrollToSection}
               >
                 {"Контакты"}

@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ModalVideo from "react-modal-video";
 import "react-modal-video/css/modal-video.css";
+import scrollToSection from "@common/scrollToSection";
 
 const Header = ({ rtl }) => {
   const [isOpen, setOpen] = useState(false);
@@ -9,6 +10,29 @@ const Header = ({ rtl }) => {
     e.preventDefault();
     setOpen(true);
   };
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("[data-scroll-index]");
+
+    window.addEventListener("scroll", () => {
+      sections.forEach((section) => {
+        const index = section.getAttribute("data-scroll-index");
+        const offset = section.offsetTop;
+        const height = section.offsetHeight;
+        const scroll = window.scrollY;
+
+        if (scroll + 200 > offset && scroll + 200 < offset + height) {
+          document
+            .querySelector(`[data-scroll-nav="${index}"]`)
+            ?.classList?.add("active");
+        } else {
+          document
+            .querySelector(`[data-scroll-nav="${index}"]`)
+            ?.classList?.remove("active");
+        }
+      });
+    });
+  }, []);
 
   return (
     <header className="style-4" data-scroll-index="0">
@@ -29,7 +53,8 @@ const Header = ({ rtl }) => {
                 </p>
                 <div className="d-flex align-items-center mt-50">
                   <a
-                    href="#contact"
+                    data-scroll-nav="8"
+                    onClick={scrollToSection}
                     className="btn rounded-pill bg-blue4 fw-bold text-white me-4"
                   >
                     <small>{"Связь с нами"}</small>

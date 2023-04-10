@@ -23,10 +23,7 @@ const Footer = ({ noWave, rtl }) => {
   };
 
   return (
-    <footer
-      className={`style-4 ${noWave ? "mt-0 pt-100" : ""}`}
-      data-scroll-index="8"
-    >
+    <footer className={`style-4 ${noWave ? "mt-0 pt-100" : ""}`}>
       <div className="container">
         <div className="section-head text-center style-4">
           <h2 className="mb-10">

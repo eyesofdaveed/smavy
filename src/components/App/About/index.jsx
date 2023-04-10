@@ -7,7 +7,10 @@ const About = ({ noFirstContent, noWave, rtl }) => {
   const data = rtl ? aboutDataRTL : aboutData;
 
   return (
-    <section className={`about ${noWave ? "" : "section-padding"} style-4`}>
+    <section
+      className={`about ${noWave ? "" : "section-padding"} style-4`}
+      data-scroll-index="2"
+    >
       {!noFirstContent && <FirstContent features={data.features} rtl={rtl} />}
       <SecondContent accordions={data.accordions} rtl={rtl} />
       {!noWave && (

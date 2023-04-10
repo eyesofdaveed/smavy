@@ -31,14 +31,14 @@ const Testimonials = ({ rtl }) => {
                 }
               </p>
               <div className="d-flex align-items-center mt-70">
-                <a
+                {/*                 <a
                   href="https://www.apple.com/app-store"
                   rel="noreferrer"
                   className="btn rounded-pill bg-blue4 fw-bold text-white me-4"
                   target="_blank"
                 >
-                  <small> {"Оставить отзыа"}</small>
-                </a>
+                  <small> {"Оставить отзыв"}</small>
+                </a> */}
                 <a
                   href="https://youtu.be/pGbIOC83-So?t=21"
                   className="play-btn"

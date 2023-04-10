@@ -5,7 +5,11 @@ const Features = ({ rtl }) => {
   const featuresData = rtl ? featuresRTL : features;
 
   return (
-    <section className="features pt-70 pb-70 style-4" data-scroll-index="1">
+    <section
+      className="features pt-70 pb-70 style-4"
+      data-scroll-index="1"
+      id="courses"
+    >
       <div className="container">
         <div className="section-head text-center style-4">
           <small className="title_small bg-white">
@@ -18,10 +22,16 @@ const Features = ({ rtl }) => {
         <div className="content">
           {featuresData.map((feature, index) => (
             <div className="features-card" key={index}>
-              <div className="icon img-contain">
+              <div
+                className="icon img-contain"
+                style={{ height: "85px", width: "auto" }}
+              >
                 <img src={feature.image} alt="" />
                 {feature.new && (
-                  <span className="label icon-40 alert-success text-success rounded-circle small text-uppercase fw-bold">
+                  <span
+                    className="label icon-40 alert-success text-success rounded-circle small text-uppercase fw-bold"
+                    style={{ top: "-12px", right: "-12px" }}
+                  >
                     {rtl ? "جديد" : "new"}
                   </span>
                 )}

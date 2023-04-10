@@ -2,7 +2,10 @@ import communityData from "@data/Contact/community.json";
 
 const Community = () => {
   return (
-    <section className="community section-padding style-5">
+    <section
+      className="community section-padding style-5"
+      data-scroll-index="8"
+    >
       <div className="container">
         <div className="section-head text-center style-4 mb-40">
           <small className="title_small">Связь с нами</small>

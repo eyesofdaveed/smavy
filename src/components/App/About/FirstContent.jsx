@@ -1,6 +1,6 @@
 const FirstContent = ({ features, rtl }) => {
   return (
-    <div className="content frs-content" id="about" data-scroll-index="2">
+    <div className="content frs-content">
       <div className="container">
         <div className="row align-items-center justify-content-between">
           <div className="col-lg-6">
@@ -12,7 +12,7 @@ const FirstContent = ({ features, rtl }) => {
             <div className="info">
               <div className="section-head style-4">
                 <h2 className="mb-30">
-                  {"Начни учиться "} <span> {"Сегодня"} </span>{" "}
+                  {"Upgrade yourself "} <span> {"Today"} </span>{" "}
                 </h2>
               </div>
               <p className="text mb-40">
