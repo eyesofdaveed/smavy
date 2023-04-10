@@ -39,6 +39,7 @@ const Form = ({ style = "4" }) => {
       className={`contact section-padding pt-${
         style === "4" ? "0" : "50"
       } style-6`}
+      id="contact"
     >
       <div className="container">
         <div className="content">

@@ -29,15 +29,13 @@ const Header = ({ rtl }) => {
                 </p>
                 <div className="d-flex align-items-center mt-50">
                   <a
-                    href="https://www.apple.com/app-store"
-                    rel="noreferrer"
+                    href="#contact"
                     className="btn rounded-pill bg-blue4 fw-bold text-white me-4"
-                    target="_blank"
                   >
                     <small>{"Связь с нами"}</small>
                   </a>
                   <a
-                    href="https://youtu.be/pGbIOC83-So?t=21"
+                    href="https://youtu.be/gDH7VFZUm4Y"
                     data-lity
                     className="play-btn"
                     onClick={openVideo}
@@ -53,18 +51,18 @@ const Header = ({ rtl }) => {
                 </div>
                 <span className="mt-100 me-5">
                   <small className="icon-30 bg-gray rounded-circle color-blue4 d-inline-flex align-items-center justify-content-center me-2">
-                    <i className="fas fa-sync"></i>
+                    <i className="fas fa-user-clock"></i>
                   </small>
                   <small className="text-uppercase">
-                    {"Бесплатное первое занятие"}
+                    {"Бесплатная консультация"}
                   </small>
                 </span>
                 <span className="mt-100">
                   <small className="icon-30 bg-gray rounded-circle color-blue4 d-inline-flex align-items-center justify-content-center me-2">
-                    <i className="fas fa-credit-card"></i>
+                    <i className="fas fa-unlock"></i>
                   </small>
                   <small className="text-uppercase">
-                    {"Гарантия возврата"}
+                    {"Гарантия трудоустройства"}
                   </small>
                 </span>
               </div>
@@ -88,7 +86,7 @@ const Header = ({ rtl }) => {
           channel="youtube"
           autoplay
           isOpen={isOpen}
-          videoId="pGbIOC83-So"
+          videoId="gDH7VFZUm4Y"
           onClose={() => setOpen(false)}
         />
       )}

@@ -57,7 +57,7 @@ const OnePageNav = ({ navbarRef }) => {
             <li className="nav-item">
               <a
                 className="nav-link"
-                href="#0"
+                href="#about"
                 data-scroll-nav="2"
                 onClick={scrollToSection}
               >
@@ -67,7 +67,7 @@ const OnePageNav = ({ navbarRef }) => {
             <li className="nav-item">
               <a
                 className="nav-link"
-                href="#0"
+                href="#courses"
                 data-scroll-nav="2"
                 onClick={scrollToSection}
               >
@@ -77,7 +77,7 @@ const OnePageNav = ({ navbarRef }) => {
             <li className="nav-item">
               <a
                 className="nav-link"
-                href="#0"
+                href="#testimonials"
                 data-scroll-nav="5"
                 onClick={scrollToSection}
               >
@@ -87,7 +87,7 @@ const OnePageNav = ({ navbarRef }) => {
             <li className="nav-item">
               <a
                 className="nav-link"
-                href="#0"
+                href="#price"
                 data-scroll-nav="6"
                 onClick={scrollToSection}
               >
@@ -97,7 +97,7 @@ const OnePageNav = ({ navbarRef }) => {
             <li className="nav-item">
               <a
                 className="nav-link"
-                href="#0"
+                href="#contact"
                 data-scroll-nav="6"
                 onClick={scrollToSection}
               >
