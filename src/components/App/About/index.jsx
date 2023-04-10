@@ -1,10 +1,9 @@
 import aboutData from "@data/App/about.json";
-import aboutDataRTL from "@data/App/about-rtl.json";
 import FirstContent from "./FirstContent";
 import SecondContent from "./SecondContent";
 
 const About = ({ noFirstContent, noWave, rtl }) => {
-  const data = rtl ? aboutDataRTL : aboutData;
+  const data = aboutData;
 
   return (
     <section

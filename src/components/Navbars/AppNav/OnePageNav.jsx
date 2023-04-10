@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import Link from "next/link";
 import scrollToSection from "@common/scrollToSection";
 
 const OnePageNav = ({ navbarRef }) => {

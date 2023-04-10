@@ -1,67 +1,67 @@
 [
   {
-    "title": "basic Plan",
-    "price": "Free",
+    "title": "Базовые курсы",
+    "price": "36,000 тенге",
     "image": "/assets/img/icons/price_s4_1.png",
-    "description": "Free 14 days trial, you can use over 20 basic features",
+    "description": "Изучение основных навыков программирования",
     "features": [
       {
-        "icon": "far fa-sticky-note",
-        "title": "Write 5 Notes On Only iOS & Android",
+        "icon": "far fa-school",
+        "title": "Офлайн обучение",
         "active": true
       },
       {
-        "icon": "fas fa-paperclip",
-        "title": "Add Attachments, Tables, Codes and More To Your Notes",
+        "icon": "fas fa-chalkboard-teacher",
+        "title": "Связь с преподавателем",
         "active": true
       },
       {
-        "icon": "fas fa-lock",
-        "title": "Protect Your Notes and Notebooks With Lock",
+        "icon": "fas fa-file-alt",
+        "title": "Промежуточные тесты",
+        "active": true
+      },
+      {
+        "icon": "fas fa-sticky-note",
+        "title": "Домашние задания",
         "active": false
       },
       {
-        "icon": "fas fa-undo",
-        "title": "Focus Mode and Dark Theme",
-        "active": false
-      },
-      {
-        "icon": "fas fa-download",
-        "title": "Export to Text, PDF, HTML and Markdown formats",
+        "icon": "fas fa-user-friends",
+        "title": "Менторство",
         "active": false
       }
     ]
   },
   {
-    "title": "premium Plan",
-    "price": "$29",
+    "title": "Продвинутые курсы",
+    "price": "100,000 тенге",
     "image": "/assets/img/icons/price_s4_2.png",
-    "description": "Experience all premium features and only one-time payment",
+    "description": "Изучение продвинутых навыков программирования",
     "off": "20%",
     "features": [
       {
-        "icon": "far fa-sticky-note",
-        "title": "Write 5 Notes On Only iOS & Android",
+        "icon": "far fa-school",
+        "title": "Офлайн обучение",
         "active": true
       },
       {
-        "icon": "fas fa-paperclip",
-        "title": "Add Attachments, Tables, Codes and More To Your Notes",
+        "icon": "fas fa-chalkboard-teacher",
+        "title": "Связь с преподавателем",
         "active": true
       },
       {
-        "icon": "fas fa-lock",
-        "title": "Protect Your Notes and Notebooks With Lock",
+        "icon": "fas fa-file-alt",
+        "title": "Промежуточные тесты и домашние задания",
         "active": true
       },
       {
-        "icon": "fas fa-undo",
-        "title": "Focus Mode and Dark Theme",
+        "icon": "fas fa-sticky-note",
+        "title": "Индивидуальные и групповые проекты",
         "active": true
       },
       {
-        "icon": "fas fa-download",
-        "title": "Export to Text, PDF, HTML and Markdown formats",
+        "icon": "fas fa-user-friends",
+        "title": "Менторство и помощь в поиске работы",
         "active": true
       }
     ]

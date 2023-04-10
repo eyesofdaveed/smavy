@@ -1,8 +1,7 @@
 import plans from "@data/App/plans.json";
-import plansRTL from "@data/App/plans-rtl.json";
 
-const Pricing = ({ rtl }) => {
-  const data = rtl ? plansRTL : plans;
+const Pricing = () => {
+  const data = plans;
 
   return (
     <section

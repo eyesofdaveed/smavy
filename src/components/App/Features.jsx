@@ -1,8 +1,7 @@
 import features from "@data/App/features.json";
-import featuresRTL from "@data/App/features-rtl.json";
 
-const Features = ({ rtl }) => {
-  const featuresData = rtl ? featuresRTL : features;
+const Features = () => {
+  const featuresData = features;
 
   return (
     <section
@@ -32,7 +31,7 @@ const Features = ({ rtl }) => {
                     className="label icon-40 alert-success text-success rounded-circle small text-uppercase fw-bold"
                     style={{ top: "-12px", right: "-12px" }}
                   >
-                    {rtl ? "جديد" : "new"}
+                    new
                   </span>
                 )}
               </div>

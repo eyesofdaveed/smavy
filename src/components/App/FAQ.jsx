@@ -1,8 +1,7 @@
 import faq from "@data/App/faq.json";
-import faqRTL from "@data/App/faq-rtl.json";
 
-const FAQ = ({ rtl }) => {
-  const data = rtl ? faqRTL : faq;
+const FAQ = () => {
+  const data = faq;
 
   return (
     <section
@@ -52,13 +51,7 @@ const FAQ = ({ rtl }) => {
                             data-bs-parent="#accordionSt4"
                           >
                             <div className="accordion-body">
-                              {rtl ? (
-                                item.answer
-                              ) : (
-                                <>
-                                  {item.answer.part1} <br /> {item.answer.part2}
-                                </>
-                              )}
+                              {item.answer.part1} <br /> {item.answer.part2}
                             </div>
                           </div>
                         </div>
@@ -101,13 +94,7 @@ const FAQ = ({ rtl }) => {
                             data-bs-parent="#accordionSt4"
                           >
                             <div className="accordion-body">
-                              {rtl ? (
-                                item.answer
-                              ) : (
-                                <>
-                                  {item.answer.part1} <br /> {item.answer.part2}
-                                </>
-                              )}
+                              {item.answer.part1} <br /> {item.answer.part2}
                             </div>
                           </div>
                         </div>

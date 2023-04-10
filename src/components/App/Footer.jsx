@@ -1,26 +1,29 @@
-import Link from "next/link";
+import { useEffect } from "react";
+import scrollToSection from "@common/scrollToSection";
 
-const Footer = ({ noWave, rtl }) => {
-  const handleMouseMove = (event) => {
-    const dropDownToggler = event.target.classList.contains("dropdown-toggle")
-      ? event.target
-      : event.target.querySelector(".dropdown-toggle");
-    const dropDownMenu = dropDownToggler?.nextElementSibling;
+const Footer = ({ noWave }) => {
+  useEffect(() => {
+    const sections = document.querySelectorAll("[data-scroll-index]");
 
-    dropDownToggler?.classList?.add("show");
-    dropDownMenu?.classList?.add("show");
-  };
+    window.addEventListener("scroll", () => {
+      sections.forEach((section) => {
+        const index = section.getAttribute("data-scroll-index");
+        const offset = section.offsetTop;
+        const height = section.offsetHeight;
+        const scroll = window.scrollY;
 
-  const handleMouseLeave = (event) => {
-    const dropdown = event.target.classList.contains("dropdown")
-      ? event.target
-      : event.target.closest(".dropdown");
-    const dropDownToggler = dropdown.querySelector(".dropdown-toggle");
-    const dropDownMenu = dropdown.querySelector(".dropdown-menu");
-
-    dropDownToggler?.classList?.remove("show");
-    dropDownMenu?.classList?.remove("show");
-  };
+        if (scroll + 200 > offset && scroll + 200 < offset + height) {
+          document
+            .querySelector(`[data-scroll-nav="${index}"]`)
+            ?.classList?.add("active");
+        } else {
+          document
+            .querySelector(`[data-scroll-nav="${index}"]`)
+            ?.classList?.remove("active");
+        }
+      });
+    });
+  }, []);
 
   return (
     <footer className={`style-4 ${noWave ? "mt-0 pt-100" : ""}`}>
@@ -45,29 +48,49 @@ const Footer = ({ noWave, rtl }) => {
             <div className="col-lg-8">
               <ul className="links">
                 <li>
-                  <Link href="/">
-                    <a className="active">{"Главная"}</a>
-                  </Link>
+                  <a
+                    href="#about"
+                    data-scroll-nav="2"
+                    onClick={scrollToSection}
+                  >
+                    {"О нас"}
+                  </a>
                 </li>
                 <li>
-                  <Link href="/page-about-5">
-                    <a>{"О нас"}</a>
-                  </Link>
+                  <a
+                    href="#courses"
+                    data-scroll-nav="1"
+                    onClick={scrollToSection}
+                  >
+                    {"Курсы"}
+                  </a>
                 </li>
                 <li>
-                  <Link href="/page-portfolio-5">
-                    <a>{"Курсы"}</a>
-                  </Link>
+                  <a
+                    href="#testimonials"
+                    data-scroll-nav="5"
+                    onClick={scrollToSection}
+                  >
+                    {"Отзывы"}
+                  </a>
                 </li>
                 <li>
-                  <Link href="/page-portfolio-5">
-                    <a>{"Отзывы"}</a>
-                  </Link>
+                  <a
+                    href="#price"
+                    data-scroll-nav="6"
+                    onClick={scrollToSection}
+                  >
+                    {"Прайс"}
+                  </a>
                 </li>
                 <li>
-                  <Link href="/page-services-5">
-                    <a>{"Прайс"}</a>
-                  </Link>
+                  <a
+                    href="#contact"
+                    data-scroll-nav="8"
+                    onClick={scrollToSection}
+                  >
+                    {"Контакты"}
+                  </a>
                 </li>
               </ul>
             </div>
@@ -79,6 +102,8 @@ const Footer = ({ noWave, rtl }) => {
             <a
               href="https://eyesofdaveed.github.io/personal-portfolio/"
               className="fw-bold text-decoration-underline"
+              target="_blank"
+              rel="noreferrer"
             >
               eyesofdaveed.
             </a>{" "}

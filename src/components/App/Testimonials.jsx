@@ -1,12 +1,11 @@
 import { useState } from "react";
 import ModalVideo from "react-modal-video";
 import testimonialsData from "@data/App/testimonials.json";
-import testimonialsDataRTL from "@data/App/testimonials-rtl.json";
 import "react-modal-video/css/modal-video.css";
 
-const Testimonials = ({ rtl }) => {
+const Testimonials = () => {
   const [isOpen, setOpen] = useState(false);
-  const data = rtl ? testimonialsDataRTL : testimonialsData;
+  const data = testimonialsData;
 
   const openVideo = (e) => {
     e.preventDefault();
@@ -40,7 +39,7 @@ const Testimonials = ({ rtl }) => {
                   <small> {"Оставить отзыв"}</small>
                 </a> */}
                 <a
-                  href="https://youtu.be/pGbIOC83-So?t=21"
+                  href="https://youtube.com/shorts/kdHrfm3l3rk?feature=share"
                   className="play-btn"
                   onClick={openVideo}
                 >
@@ -58,9 +57,9 @@ const Testimonials = ({ rtl }) => {
               <div className="testi-cards">
                 {data.testiCards.map((card, index) => (
                   <div className="client_card" key={index}>
-                    <div className="user_img">
+                    {/*               <div className="user_img">
                       <img src={card.userImg} alt="" />
-                    </div>
+                    </div> */}
                     <div className="inf_content">
                       <div className="stars mb-2">
                         {Array(card.stars)
@@ -82,7 +81,7 @@ const Testimonials = ({ rtl }) => {
                         {card.author.name}{" "}
                         <span className="text-muted">
                           {" "}
-                          / {card.author.position} {rtl ? "في" : "at"}{" "}
+                          / {card.author.position} /{" "}
                           <span>{card.author.company}</span>{" "}
                         </span>
                       </p>
@@ -104,7 +103,7 @@ const Testimonials = ({ rtl }) => {
           channel="youtube"
           autoplay
           isOpen={isOpen}
-          videoId="pGbIOC83-So"
+          videoId="kdHrfm3l3rk"
           onClose={() => setOpen(false)}
         />
       )}

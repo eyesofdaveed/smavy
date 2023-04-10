@@ -1,6 +1,6 @@
 import clients from "@data/App/clients.json";
 
-const Clients = ({ rtl }) => {
+const Clients = () => {
   return (
     <section className="clients style-4" data-scroll-index="1">
       <div className="container">

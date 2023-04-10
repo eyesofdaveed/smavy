@@ -20,36 +20,36 @@
       "userImg": "/assets/img/testimonials/user4.png",
       "stars": 5,
       "title": {
-        "text1": "“You can even send emails to Evernote and gather  ",
-        "text2": " all of the things you need in a single place.”"
+        "text1": "“Я очень доволен тем, как быстро я научился программированию благодаря курсам Smavy.",
+        "text2": "  Учителя были профессионалами в своей области и были всегда готовы помочь мне.”"
       },
       "author": {
-        "name": "jurgen k.",
-        "position": "Senior Marketing",
-        "company": "Br /ator"
+        "name": "Ержан А.",
+        "position": "Фронтенд на React",
+        "company": "Студент АТУ"
       }
     },
     {
       "userImg": "/assets/img/testimonials/user5.png",
       "stars": 5,
-      "title": "“Notero - 1st my choice for notes app. Awesome”",
+      "title": "“Самые лучшие и чилловые учителя!”",
       "author": {
-        "name": "foden p.",
-        "position": "Director",
-        "company": "Ecoland Resort"
+        "name": "Аяжан К.",
+        "position": "Базовые курсы Python",
+        "company": "Студент СДУ"
       }
     },
     {
       "userImg": "/assets/img/testimonials/user6.png",
       "stars": 5,
       "title": {
-        "text1": "”.This app is seriously good. It’s simple, clean and ",
-        "text2": " a real joy to use.”"
+        "text1": "”Я очень благодарна за этот опыт и настоятельно рекомендую эту школу для всех, кто хочет стать опытным программистом.”",
+        "text2": ""
       },
       "author": {
-        "name": "Kerry T.",
-        "position": "Designer",
-        "company": "Teckzone Inc"
+        "name": "Данияр А.",
+        "position": "Мобильная разработка на Flutter",
+        "company": "Фриланс"
       }
     }
   ]

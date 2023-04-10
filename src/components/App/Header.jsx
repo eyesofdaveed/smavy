@@ -3,7 +3,7 @@ import ModalVideo from "react-modal-video";
 import "react-modal-video/css/modal-video.css";
 import scrollToSection from "@common/scrollToSection";
 
-const Header = ({ rtl }) => {
+const Header = () => {
   const [isOpen, setOpen] = useState(false);
 
   const openVideo = (e) => {

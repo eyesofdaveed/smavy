@@ -1,4 +1,30 @@
-const FirstContent = ({ features, rtl }) => {
+import { useEffect } from "react";
+import scrollToSection from "@common/scrollToSection";
+
+const FirstContent = () => {
+  useEffect(() => {
+    const sections = document.querySelectorAll("[data-scroll-index]");
+
+    window.addEventListener("scroll", () => {
+      sections.forEach((section) => {
+        const index = section.getAttribute("data-scroll-index");
+        const offset = section.offsetTop;
+        const height = section.offsetHeight;
+        const scroll = window.scrollY;
+
+        if (scroll + 200 > offset && scroll + 200 < offset + height) {
+          document
+            .querySelector(`[data-scroll-nav="${index}"]`)
+            ?.classList?.add("active");
+        } else {
+          document
+            .querySelector(`[data-scroll-nav="${index}"]`)
+            ?.classList?.remove("active");
+        }
+      });
+    });
+  }, []);
+
   return (
     <div className="content frs-content">
       <div className="container">
@@ -29,8 +55,9 @@ const FirstContent = ({ features, rtl }) => {
                 </>
               </p>
               <a
-                href="page-contact-5.html"
                 className="btn rounded-pill bg-blue4 fw-bold text-white"
+                data-scroll-nav="8"
+                onClick={scrollToSection}
               >
                 <small> Бесплатная консультация </small>
               </a>
