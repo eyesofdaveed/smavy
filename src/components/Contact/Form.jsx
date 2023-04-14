@@ -25,8 +25,23 @@ const Form = ({ style = "4" }) => {
     formValues.append("phone", formData.phone);
     formValues.append("option", formData.option);
 
+    if (
+      !formData.name ||
+      !formData.email ||
+      !formData.phone ||
+      !formData.option
+    ) {
+      alert("Пожалуйста, заполните все поля");
+      return;
+    }
+
     const res = await axios
-      .post("/contact.php", formValues)
+      .post("/api/sendgrid", {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        option: formData.option,
+      })
       .catch((err) => alert(err.message));
 
     if (!res) return;
@@ -44,12 +59,7 @@ const Form = ({ style = "4" }) => {
         <div className="content">
           <div className="row justify-content-center">
             <div className="col-lg-8">
-              <form
-                action="contact.php"
-                className="form"
-                method="post"
-                onSubmit={handleFormSubmit}
-              >
+              <form className="form" method="post" onSubmit={handleFormSubmit}>
                 <p className="text-center text-danger fs-12px mb-30">
                   {"Поля обязательны к заполнению *"}
                 </p>
