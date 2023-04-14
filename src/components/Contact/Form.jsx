@@ -92,7 +92,7 @@ const Form = ({ style = "4" }) => {
                         type="text"
                         name="phone"
                         className="form-control"
-                        placeholder={"Номер телефона (вотсап)"}
+                        placeholder={"Номер телефона (вотсап) *"}
                         onChange={handleFormChange}
                       />
                     </div>
@@ -101,7 +101,7 @@ const Form = ({ style = "4" }) => {
                     <div className="form-group mb-20">
                       <select
                         className="form-select"
-                        defaultValue={"Что вас интересует?"}
+                        defaultValue={"Что вас интересует? *"}
                         name="option"
                         onChange={handleFormChange}
                       >
