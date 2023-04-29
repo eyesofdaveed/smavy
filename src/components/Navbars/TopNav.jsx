@@ -1,4 +1,5 @@
-import Link from "next/link";
+import { useEffect } from "react";
+import scrollToSection from "@common/scrollToSection";
 
 const TopNav = ({ style }) => {
   return (
@@ -15,11 +16,6 @@ const TopNav = ({ style }) => {
           />
           <span className="fs-10px op-6 me-1">{"Получи"} </span>
           <small className="op-10 fs-10px">{"20% скидки"}</small>
-          <Link href="#contact">
-            <a className="fs-10px text-decoration-underline ms-2">
-              {"Свяжись с нами"}
-            </a>
-          </Link>
         </div>
       </div>
     </div>

@@ -60,7 +60,7 @@ const Header = () => {
                     <small>{"Связь с нами"}</small>
                   </a>
                   <a
-                    href="https://youtu.be/gDH7VFZUm4Y"
+                    href="https://youtu.be/mRzsWRFQmQ4"
                     data-lity
                     className="play-btn"
                     onClick={openVideo}
@@ -111,7 +111,7 @@ const Header = () => {
           channel="youtube"
           autoplay
           isOpen={isOpen}
-          videoId="gDH7VFZUm4Y"
+          videoId="mRzsWRFQmQ4"
           onClose={() => setOpen(false)}
         />
       )}
