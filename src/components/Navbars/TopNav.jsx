@@ -1,6 +1,3 @@
-import { useEffect } from "react";
-import scrollToSection from "@common/scrollToSection";
-
 const TopNav = ({ style }) => {
   return (
     <div className={`top-navbar style-${style}`}>
