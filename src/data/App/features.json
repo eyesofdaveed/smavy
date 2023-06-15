@@ -7,17 +7,10 @@
     }
   },
   {
-    "image": "/assets/img/icons/next.png",
-    "title": {
-      "text1": "Fullstack Development",
-      "text2": "NextJs"
-    }
-  },
-  {
-    "image": "/assets/img/icons/golang.webp",
+    "image": "/assets/img/icons/nodejs.png",
     "title": {
       "text1": "Backend Development",
-      "text2": "GoLang"
+      "text2": "NodeJs"
     }
   },
   {
