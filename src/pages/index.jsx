@@ -26,6 +26,7 @@ const HomeAppLandingOnePage = () => {
     navbarScrollEffect(navbarRef.current);
   }, [navbarRef]);
 
+
   return (
     <>
       <Head>

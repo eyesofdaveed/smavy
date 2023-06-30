@@ -2,8 +2,7 @@ import features from "@data/App/features.json";
 import Link from "next/link";
 import React from "react";
 
-const FeatureItem = ({ image, title, body, pdf }) => {
- 
+const FeatureItem = ({ image, title, body }) => {
 
   return (
     <div

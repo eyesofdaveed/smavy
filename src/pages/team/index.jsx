@@ -1,7 +1,7 @@
 import MainLayout from "@layouts/Main";
 import React, { useRef, useEffect, useState } from "react";
 import TopNav from "@components/Navbars/TopNav";
-import Navbar from "@components/Navbars/AppNav/OnePageNav";
+import Navbar from "@components/Navbars/AppNav/AdditionalPageNav";
 import navbarScrollEffect from "@common/navbarScrollEffect";
 import team from "@data/App/team.json";
 import TeamItem from "@components/App/TeamItem";

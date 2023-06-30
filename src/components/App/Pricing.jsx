@@ -6,6 +6,7 @@ const Pricing = () => {
   return (
     <section
       className="pricing section-padding style-4 pb-50"
+      id="price"
       data-scroll-index="6"
     >
       <div className="container">
