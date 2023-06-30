@@ -5,6 +5,7 @@ import Navbar from "@components/Navbars/AppNav/OnePageNav";
 import navbarScrollEffect from "@common/navbarScrollEffect";
 import courses from "../../data/App/courses.json";
 import Modal from "@components/App/Modal";
+import CourseItem from "@components/App/CourseItem";
 
 const Courses = () => {
   const navbarRef = useRef(null);
@@ -30,28 +31,6 @@ const Courses = () => {
         </div>
       </main>
     </MainLayout>
-  );
-};
-
-const CourseItem = ({ pdf, title, text, image}) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  return (
-    <>
-      <Modal pdf={pdf} isOpen={isOpen} setIsOpen={setIsOpen}/>
-      <div className="courses-item">
-        <div className="courses-item-info">
-          <h1 className="courses-item-title">{title}</h1>
-          <div className="courses-item-body">{text}</div>
-          <button className="pdf-btn" onClick={() => setIsOpen(true)}>
-            Силлабус
-          </button>
-        </div>
-        <div className="courses-item-img">
-          <img src={image} alt="" />
-        </div>
-      </div>
-    </>
   );
 };
 
