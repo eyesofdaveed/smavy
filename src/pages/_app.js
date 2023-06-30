@@ -4,12 +4,10 @@ import Head from "next/head";
 import "../styles/preloader.css";
 import "../styles/globals.css";
 import dotenv from "dotenv"
-import { useRouter } from "next/router";
 
 dotenv.config()
 
 function MyApp({ Component, pageProps }) {
-  const { asPath } = useRouter()
   
   return (
     <>
