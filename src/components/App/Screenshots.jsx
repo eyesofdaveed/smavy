@@ -1,11 +1,13 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import screenshots from "@data/App/screenshots.json";
+import Link from "next/link";
 
 import "swiper/css";
 
 const Screenshots = () => {
   const [loadSwiper, setLoadSwiper] = useState(false);
+  const [activeSlide, setActiveSlide] = useState(0)
 
   useEffect(() => {
     setTimeout(() => {
@@ -15,9 +17,11 @@ const Screenshots = () => {
 
   return (
     <div className="screenshots style-4" data-scroll-index="4">
+      <h2 className="team-title">Наша <span>команда</span></h2>
       <div className="screenshots-slider style-4">
         {loadSwiper && (
           <Swiper
+            onSlideChange={function(){setActiveSlide(this.realIndex)}}
             className="swiper-container"
             spaceBetween={0}
             slidesPerView={5}
@@ -51,8 +55,11 @@ const Screenshots = () => {
           >
             {screenshots.map((screenshot, index) => (
               <SwiperSlide key={index}>
-                <div className="img">
-                  <img src={screenshot} alt="" />
+                <div className="img" >
+                  <img src={screenshot.img} alt="" />
+                    <Link href="/team" >
+                        <a className={`screenshot-btn ${activeSlide !== index && 'disabled'}`}>{screenshot.text}</a>
+                    </Link>
                 </div>
               </SwiperSlide>
             ))}

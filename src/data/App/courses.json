@@ -1,0 +1,33 @@
+[
+
+    {
+        "title":"ReactJs from Zero to Hero",
+        "text":"Этот курс начинается с архитектуры React, руководства по настройке проектов, создания компонентов, JSX, а затем проходит через расширенные концепции, такие как управление состоянием, формирование программирование, маршрутизация и, наконец, завершается индивидуальным проектом" ,
+        "pdf":["/assets/pdf/react/react-1.png","/assets/pdf/react/react-2.png","/assets/pdf/react/react-3.png","/assets/pdf/react/react-4.png","/assets/pdf/react/react-5.png","/assets/pdf/react/react-6.png","/assets/pdf/react/react-7.png"],
+        "image": "/assets/img/icons/react.jpeg"
+    },
+    {
+        "title":"NodeJS from Zero to Hero",
+        "text":"Node.js это кроссплатформенная среда выполнения JavaScript с открытым исходным кодом, которая запускает код JavaScript вне веб-браузера. Этот курс поможет вам изучить основы Node.js и самому запустить веб-сервер подключенный к базе данных с API и развернуть его в облаке" ,
+        "pdf":["/assets/pdf/node/node-1.png","/assets/pdf/node/node-2.png","/assets/pdf/node/node-3.png","/assets/pdf/node/node-4.png","/assets/pdf/node/node-5.png","/assets/pdf/node/node-6.png","/assets/pdf/node/node-7.png"],
+        "image": "/assets/img/icons/nodejs.png"
+    },
+    {
+        "title":"Мобильная разработка для Android",
+        "text":"Курс 'Мобильная разработка для Android' предназначен для тех, кто хочет научиться создавать мобильные приложения для операционной системы Android. В ходе курса вы узнаете основы разработки на платформе Android, включая язык программирования Java и Kotlin, архитектуру приложений, пользовательский интерфейс, работу с базами данных и взаимодействие с внешними сервисами и API." ,
+        "pdf":["/assets/pdf/android/android-1.png","/assets/pdf/android/android-2.png","/assets/pdf/android/android-3.png","/assets/pdf/android/android-4.png","/assets/pdf/android/android-5.png","/assets/pdf/android/android-6.png","/assets/pdf/android/android-7.png","/assets/pdf/android/android-8.png"],
+        "image": "/assets/img/icons/android.jpeg"
+    },
+    {
+        "title":"Мобильная разработка на Flutter",
+        "text":"Курс 'Мобильная разработка с использованием Flutter' предназначен для изучения разработки мобильных приложений с использованием фреймворка Flutter. Вы научитесь создавать кросс-платформенные приложения для Android и iOS, используя один и тот же код на языке программирования Dart." ,
+        "pdf":["/assets/pdf/flutter/flutter-1.png","/assets/pdf/flutter/flutter-2.png","/assets/pdf/flutter/flutter-3.png","/assets/pdf/flutter/flutter-4.png","/assets/pdf/flutter/flutter-5.png","/assets/pdf/flutter/flutter-6.png","/assets/pdf/flutter/flutter-7.png","/assets/pdf/data/flutter-8.png"],
+        "image": "/assets/img/icons/flutter.jpeg"
+    },
+    {
+        "title":"Data analytics",
+        "text":"Этот курс предназначен для обучения анализу различных типов данных с использованием языка программирования Python. В ходе обучения студенты научатся подготавливать данные для анализа, выполнять простые статистические анализы, создавать значимые визуализации данных и прогнозировать будущие тенденции на основе данных." ,
+        "pdf":["/assets/pdf/data/data-1.png","/assets/pdf/data/data-2.png","/assets/pdf/data/data-3.png","/assets/pdf/data/data-4.png","/assets/pdf/data/data-5.png","/assets/pdf/data/data-6.png","/assets/pdf/data/data-7.png"],
+        "image": "/assets/img/icons/python.webp"
+    }
+]
