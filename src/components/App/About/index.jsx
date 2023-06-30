@@ -9,6 +9,7 @@ const About = ({ noFirstContent, noWave, rtl }) => {
     <section
       className={`about ${noWave ? "" : "section-padding"} style-4`}
       data-scroll-index="2"
+      id="about"
     >
       {!noFirstContent && <FirstContent features={data.features} rtl={rtl} />}
       <SecondContent accordions={data.accordions} rtl={rtl} />

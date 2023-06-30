@@ -1,7 +1,7 @@
 import MainLayout from "@layouts/Main";
 import React, { useRef, useEffect, useState } from "react";
 import TopNav from "@components/Navbars/TopNav";
-import Navbar from "@components/Navbars/AppNav/OnePageNav";
+import Navbar from "@components/Navbars/AppNav/AdditionalPageNav";
 import navbarScrollEffect from "@common/navbarScrollEffect";
 import courses from "../../data/App/courses.json";
 import Modal from "@components/App/Modal";

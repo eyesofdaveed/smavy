@@ -13,7 +13,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="testimonials style-4 pt-70" data-scroll-index="5">
+    <section className="testimonials style-4 pt-70" data-scroll-index="5" id="testimonials">
       <div className="container">
         <div className="content">
           <div className="row">

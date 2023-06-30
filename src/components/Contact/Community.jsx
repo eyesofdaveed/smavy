@@ -5,6 +5,7 @@ const Community = () => {
     <section
       className="community section-padding style-5"
       data-scroll-index="8"
+      id="contact"
     >
       <div className="container">
         <div className="section-head text-center style-4 mb-40">
