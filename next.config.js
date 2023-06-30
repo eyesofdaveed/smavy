@@ -15,6 +15,7 @@ const nextConfig = {
   },
   env: {
     SENDGRID_API_KEY: process.env.SENDGRID_API_KEY,
+    BASE_URL: process.env.NEXT_PUBLIC_BASE_URL
   },
 };
 
