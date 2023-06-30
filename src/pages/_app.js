@@ -3,8 +3,12 @@ import Script from "next/script";
 import Head from "next/head";
 import "../styles/preloader.css";
 import "../styles/globals.css";
+import dotenv from "dotenv"
+
+dotenv.config()
 
 function MyApp({ Component, pageProps }) {
+  
   return (
     <>
       <Head>

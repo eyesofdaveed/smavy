@@ -1,7 +1,10 @@
 import { useEffect } from "react";
 import scrollToSection from "@common/scrollToSection";
+import Link from "next/link";
 
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || ''
 const OnePageNav = ({ navbarRef }) => {
+
   useEffect(() => {
     const sections = document.querySelectorAll("[data-scroll-index]");
 
@@ -54,9 +57,16 @@ const OnePageNav = ({ navbarRef }) => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav m-auto mb-2 mb-lg-0 text-uppercase">
             <li className="nav-item">
+              <Link
+                href={BASE_URL || ''}
+              >
+                <a className="nav-link">{"Главная"}</a>
+              </Link>
+            </li>
+            <li className="nav-item">
               <a
                 className="nav-link"
-                href="#about"
+                href={BASE_URL + '#about'}
                 data-scroll-nav="2"
                 onClick={scrollToSection}
               >
@@ -66,7 +76,7 @@ const OnePageNav = ({ navbarRef }) => {
             <li className="nav-item">
               <a
                 className="nav-link"
-                href="#courses"
+                href={BASE_URL + '#courses'}
                 data-scroll-nav="1"
                 onClick={scrollToSection}
               >
@@ -76,7 +86,7 @@ const OnePageNav = ({ navbarRef }) => {
             <li className="nav-item">
               <a
                 className="nav-link"
-                href="#testimonials"
+                href={BASE_URL + '#testimonials'}
                 data-scroll-nav="5"
                 onClick={scrollToSection}
               >
@@ -86,7 +96,7 @@ const OnePageNav = ({ navbarRef }) => {
             <li className="nav-item">
               <a
                 className="nav-link"
-                href="#price"
+                href={BASE_URL + '#price'}
                 data-scroll-nav="6"
                 onClick={scrollToSection}
               >
@@ -94,9 +104,16 @@ const OnePageNav = ({ navbarRef }) => {
               </a>
             </li>
             <li className="nav-item">
+              <Link
+                href="/team"
+              >
+                <a className="nav-link">{"Команда"}</a>
+              </Link>
+            </li> 
+            <li className="nav-item">
               <a
                 className="nav-link"
-                href="#contact"
+                href={BASE_URL + '#contact'}
                 data-scroll-nav="8"
                 onClick={scrollToSection}
               >

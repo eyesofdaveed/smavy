@@ -1,4 +1,31 @@
 import features from "@data/App/features.json";
+import Link from "next/link";
+import React from "react";
+
+const FeatureItem = ({ image, title, body, pdf }) => {
+ 
+
+  return (
+    <div
+      className="features-card">
+      <div
+        className="icon img-contain"
+        style={{ height: "95px", width: "auto" }}
+      >
+        <img src={image} alt="" />
+      </div>
+      <h6 className="feature-title" >
+        {title.text1} <br /> {title.text2}
+      </h6>
+      <div className={`feature-content`}>{body}</div>
+      <button className="pdf-btn" >
+        <Link href={'/courses'}>
+          <a className="feature-link">Подробнее</a>
+        </Link>
+      </button>
+    </div>
+  );
+};
 
 const Features = () => {
   const featuresData = features;
@@ -20,25 +47,7 @@ const Features = () => {
         </div>
         <div className="content">
           {featuresData.map((feature, index) => (
-            <div className="features-card" key={index}>
-              <div
-                className="icon img-contain"
-                style={{ height: "85px", width: "auto" }}
-              >
-                <img src={feature.image} alt="" />
-                {feature.new && (
-                  <span
-                    className="label icon-40 alert-success text-success rounded-circle small text-uppercase fw-bold"
-                    style={{ top: "-12px", right: "-12px" }}
-                  >
-                    new
-                  </span>
-                )}
-              </div>
-              <h6>
-                {feature.title.text1} <br /> {feature.title.text2}
-              </h6>
-            </div>
+            <FeatureItem key={index} {...feature} />
           ))}
         </div>
       </div>
