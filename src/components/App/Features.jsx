@@ -17,11 +17,9 @@ const FeatureItem = ({ image, title, body }) => {
         {title.text1} <br /> {title.text2}
       </h6>
       <div className={`feature-content`}>{body}</div>
-      <button className="pdf-btn" >
         <Link href={'/courses'}>
-          <a className="feature-link">Подробнее</a>
+          <a className="pdf-btn ">Подробнее</a>
         </Link>
-      </button>
     </div>
   );
 };
