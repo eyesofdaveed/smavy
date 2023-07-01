@@ -58,7 +58,7 @@ const OnePageNav = ({ navbarRef }) => {
           <ul className="navbar-nav m-auto mb-2 mb-lg-0 text-uppercase">
             <li className="nav-item">
               <Link
-                href={BASE_URL || ''}
+                href={'/'}
               >
                 <a className="nav-link">{"Главная"}</a>
               </Link>
