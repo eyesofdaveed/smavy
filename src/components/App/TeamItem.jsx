@@ -23,7 +23,7 @@ const TeamItem = ({img, name, position, description, pdf, link}) => {
               {
                 link && 
                 <a ref={linkRef} href={link} className="team-member-icon">
-                  <img src="/assets/img/icons/linkedin.png" alt="" />
+                  <img src="/assets/img/icons/linkedin.png" alt="link" />
                 </a>
               }
               <button ref={buttonRef} onClick={() => setIsOpen(true)} className="team-member-btn">
