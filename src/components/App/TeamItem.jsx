@@ -3,7 +3,14 @@ import Modal from './Modal/index';
 
 const TeamItem = ({img, name, position, description, pdf, link}) => {
     const [isOpen, setIsOpen] = React.useState(false);
-  
+    const buttonRef = React.useRef(null);
+    const linkRef = React.useRef(null);
+
+    React.useEffect(() => {
+      buttonRef.current.classList.add('animate');
+      linkRef.current?.classList.add('animate');
+    }, []);
+
     return (
       <>
         <Modal isOpen={isOpen} pdf={pdf} setIsOpen={setIsOpen}/>
@@ -15,14 +22,13 @@ const TeamItem = ({img, name, position, description, pdf, link}) => {
             <div className="team-member-socials">
               {
                 link && 
-                <a href={link} className="team-member-icon">
-                  <img src="/assets/img/icons/Linkedin.png" alt="" />
+                <a ref={linkRef} href={link} className="team-member-icon">
+                  <img src="/assets/img/icons/linkedin.png" alt="" />
                 </a>
               }
-              <img 
-                onClick={() => setIsOpen(true)} 
-                className="team-member-icon" 
-                src="/assets/img/icons/file.png" alt="cv" />
+              <button ref={buttonRef} onClick={() => setIsOpen(true)} className="team-member-btn">
+                Подробнее
+              </button>
             </div>
           </div>
           <div className="team-member-img-wrapper" >
