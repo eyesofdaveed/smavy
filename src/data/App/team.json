@@ -3,32 +3,32 @@
         "name":"Даулет Дауитбек",
         "position":"Ментор по Веб разработке",
         "description":"Старший веб-инженер в Берлинской компании, Hopkins Tech 7 летний опыт в сфере ИТ и в разработке веб приложении. 3 летний опыт в сфере профильного образования и менторства",
-        "link":"",
-        "cv":[],
+        "link":"https://www.linkedin.com/in/daulet-dauitbek-344182178/",
+        "cv":["/assets/team/daulet/1.png","/assets/team/daulet/2.png","/assets/team/daulet/3.png"],
         "img":"/assets/img/team/1.png"
     },
     {
         "name":"Рауан Жаксыбаев",
         "position":"Ментор по Мобильной Разработке",
         "description":"9-летний опыт работы в сфере IT. Участие в крупных банковских и финтех проектах как Kaspi Pay, Tayyab, Wio Bank в ОАЕ. Многолетний опыт в сфере образования по предметам Математика и Информатика",
-        "link":"",
-        "cv":[],
+        "link":"https://www.linkedin.com/in/rauan-zhaxibayev-6a2940103/",
+        "cv":["/assets/team/rauan/1.png","/assets/team/rauan/2.png"],
         "img":"/assets/img/team/2.png"
     },
     {
         "name":"Дархан Рысбек",
         "position":"Ментор по Анализу данных",
         "description":"Старший веб-инженер в Берлинской компании, Hopkins Tech 7 летний опыт в сфере ИТ и в разработке веб приложении. 3 летний опыт в сфере профильного образования и менторства",
-        "link":"",
-        "cv":[],
+        "link":"https://www.linkedin.com/in/darkhan-rysbek-45aa3a130/",
+        "cv":["/assets/team/darkhan/1.png","/assets/team/darkhan/2.png","/assets/team/darkhan/3.png"],
         "img":"/assets/img/team/3.png"
     },
     {
         "name":"Улдай Бекболатова",
         "position":"Преподаватель по Веб разработке",
         "description":"Учитель по Веб разработке. Магистр педагогических наук. Опыт в преподавании больше 3 лет.",
-        "link":"",
-        "cv":[],
+        "link":"https://www.linkedin.com/in/uldayb",
+        "cv":["/assets/team/ulday/1.png","/assets/team/ulday/2.png","/assets/team/ulday/3.png","/assets/team/ulday/4.png","/assets/team/ulday/5.png","/assets/team/ulday/6.png","/assets/team/ulday/7.png"],
         "img":"/assets/img/team/4.png"
     },
     {
@@ -36,7 +36,7 @@
         "position":"Преподаватель по Веб разработке",
         "description":"Выпускник МУИТ по Компьютерным наукам. Опыт в создании платформ для университетов и на фрилансе больше 2 лет.",
         "link":"",
-        "cv":[],
+        "cv":["/assets/team/rahat/1.png","/assets/team/rahat/2.png","/assets/team/rahat/3.png","/assets/team/rahat/4.png","/assets/team/rahat/5.png","/assets/team/rahat/6.png"],
         "img":"/assets/img/team/5.png"
     },
     {
@@ -44,7 +44,7 @@
         "position":"Преподаватель по Мобильной разработке",
         "description":"Учитель по Мобильной разработке. Большой опыт в преподавании информатики. Магистр педагогических наук ",
         "link":"",
-        "cv":[],
+        "cv":["/assets/team/bakhytzhan/1.png","/assets/team/bakhytzhan/2.png","/assets/team/bakhytzhan/3.png","/assets/team/bakhytzhan/4.png","/assets/team/bakhytzhan/5.png","/assets/team/bakhytzhan/6.png","/assets/team/bakhytzhan/7.jpeg"],
         "img":"/assets/img/team/6.png"
     },
     {
@@ -52,7 +52,7 @@
         "position":"Преподаватель",
         "description":"Учитель языка программирования на Python в колледже инновации.",
         "link":"",
-        "cv":[],
+        "cv":["/assets/team/daniyar/1.png","/assets/team/daniyar/2.jpg"],
         "img":"/assets/img/team/7.png"
     }
 ]

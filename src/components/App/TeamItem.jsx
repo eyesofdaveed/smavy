@@ -1,7 +1,7 @@
 import React from 'react'
 import Modal from './Modal/index';
 
-const TeamItem = ({img, name, position, description,pdf}) => {
+const TeamItem = ({img, name, position, description, pdf, link}) => {
     const [isOpen, setIsOpen] = React.useState(false);
   
     return (
@@ -13,9 +13,12 @@ const TeamItem = ({img, name, position, description,pdf}) => {
             <div className="team-member-position">{position}</div>
             <div className="team-member-description">{description}</div>
             <div className="team-member-socials">
-              <a href="#" className="team-member-icon">
-                <img src="/assets/img/icons/Linkedin.png" alt="" />
-              </a>
+              {
+                link && 
+                <a href={link} className="team-member-icon">
+                  <img src="/assets/img/icons/Linkedin.png" alt="" />
+                </a>
+              }
               <img 
                 onClick={() => setIsOpen(true)} 
                 className="team-member-icon" 

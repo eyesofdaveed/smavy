@@ -25,7 +25,9 @@ const Team = () => {
               name={person.name}
               position={person.position}
               description={person.description}
-              img={person.img} />
+              img={person.img}
+              pdf={person.cv}
+              link={person.link} />
           ))}
         </div>
       </main>

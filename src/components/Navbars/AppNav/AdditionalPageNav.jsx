@@ -12,7 +12,7 @@ const AdditionalPageNav = ({ navbarRef }) => {
       ref={navbarRef}
     >
       <div className="container">
-        <Link href={BASE_URL}>
+        <Link href={'/'}>
           <a className="navbar-brand" data-scroll-nav="0">
             <img src="/assets/img/logo_lgr.png" alt="" />
           </a>
@@ -31,7 +31,7 @@ const AdditionalPageNav = ({ navbarRef }) => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav m-auto mb-2 mb-lg-0 text-uppercase">
             <li className="nav-item">
-              <Link href={BASE_URL}>
+              <Link href={'/'}>
                 <a className="nav-link">{"Главная"}</a>
               </Link>
             </li>
