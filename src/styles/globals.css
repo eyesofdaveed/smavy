@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -14,7 +15,8 @@ html, body {
   display: none;
 }
 
-.lg-container, .lg-container * {
+.lg-container,
+.lg-container * {
   direction: ltr !important;
 }
 
@@ -28,20 +30,18 @@ html, body {
   box-shadow: 0 0 0 2px var(--clr-style) !important;
 }
 
-
 .related-products-slider .swiper-container,
 .slider-3items .swiper-container,
 .screenshots-slider .swiper-container {
   direction: ltr !important;
 }
 
-
 .pricing.style-8 .rc-slider-handle {
   background-color: #fff !important;
   border-color: #fff !important;
 }
 
-.team-title{
+.team-title {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -52,27 +52,32 @@ html, body {
   top: 20px;
 }
 
-.team-title span{
+.team-title span {
   background-clip: text;
   color: transparent;
-  background-image: linear-gradient(to right, #501e9c 0%, #8169f1 30%, #8169f1 30%, #a44cee 73%, #ff847f 100%);
+  background-image: linear-gradient(
+    to right,
+    #501e9c 0%,
+    #8169f1 30%,
+    #8169f1 30%,
+    #a44cee 73%,
+    #ff847f 100%
+  );
 }
 
-
-.features.style-4 .content{
+.features.style-4 .content {
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 32px;
   justify-content: space-evenly;
 }
 
-.features-card{
+.features-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  box-shadow: -1px 2px 25px -3px rgba(88,66,188,0.75);
+  box-shadow: -1px 2px 25px -3px rgba(88, 66, 188, 0.75);
   height: 520px;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   width: 24%;
   border-radius: 18px;
   padding: 10px;
@@ -82,13 +87,13 @@ html, body {
   -moz-border-radius: 18px;
   -ms-border-radius: 18px;
   -o-border-radius: 18px;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  -o-transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
 }
 
-.feature-content{
+.feature-content {
   padding: 10px 15px;
   text-align: left;
   width: 100%;
@@ -96,15 +101,23 @@ html, body {
   overflow: hidden;
 }
 
-.feature-link:hover{
+.feature-content-body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feature-link:hover {
   color: #fff;
 }
 
-.pdf-btn{
+.pdf-btn {
   max-width: 100px;
   padding: 8px 16px;
   font-size: 12px;
-  background-color:#8169f1;
+  background-color: #8169f1;
   border: none;
   color: #fff;
   border-radius: 24px;
@@ -112,25 +125,24 @@ html, body {
   -moz-border-radius: 24px;
   -ms-border-radius: 24px;
   -o-border-radius: 24px;
-  transition: all .5s linear;
-  -webkit-transition: all .5s linear;
-  -moz-transition: all .5s linear;
-  -ms-transition: all .5s linear;
-  -o-transition: all .5s linear;
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
   border: 1px solid #8169f1;
 }
 
-.pdf-btn:hover{
+.pdf-btn:hover {
   color: #8169f1;
   background-color: #fff;
 }
 
-.pdf-btn:hover .feature-link{
+.pdf-btn:hover .feature-link {
   color: #8169f1;
 }
 
-
-.screenshot-btn{
+.screenshot-btn {
   outline: none;
   border: none;
   position: absolute;
@@ -156,25 +168,23 @@ html, body {
   font-size: 10px;
 }
 
-.screenshot-btn.disabled{
+.screenshot-btn.disabled {
   pointer-events: none;
 }
 
-.screenshot-btn:hover{
+.screenshot-btn:hover {
   color: #fff;
 }
 
-.screenshot-btn:visited{
+.screenshot-btn:visited {
   color: #fff;
 }
 
-
-.img{
+.img {
   position: relative;
 }
 
-
-.team{
+.team {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -182,65 +192,65 @@ html, body {
   gap: 50px;
 }
 
-.team-member{
+.team-member {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.team-member-position{
+.team-member-position {
   font-weight: 500;
   font-size: 24px;
 }
 
-.team-member-info{
+.team-member-info {
   width: 50%;
 }
 
-.team-member-description{
+.team-member-description {
   padding: 10px 0 15px;
 }
 
-.team-member-socials{
+.team-member-socials {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
 }
 
-.team-member-icon{
+.team-member-icon {
   height: 45px;
   width: 45px;
   cursor: pointer;
 }
 
-.team-member-icon img{
+.team-member-icon img {
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
 }
 
-.team-member-icon.animate{
+.team-member-icon.animate {
   animation: introAnimation 1s ease-in-out 1000ms;
   -webkit-animation: introAnimation 1s ease-in-out 1000ms;
 }
 
-.team-member-img-wrapper{
+.team-member-img-wrapper {
   width: 240px;
   height: 240px;
 }
 
-.team-member-img{
+.team-member-img {
   width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
 }
 
-.team-member-btn{
+.team-member-btn {
   height: 50px;
   font-size: 13px;
-  background-color:#8169f1;
+  background-color: #8169f1;
   color: #fff;
   border: none;
   outline: none;
@@ -251,19 +261,19 @@ html, body {
   -ms-border-radius: 32px;
   -o-border-radius: 32px;
   border: 1px solid #8169f1;
-  transition: all .5s linear;
-  -webkit-transition: all .5s linear;
-  -moz-transition: all .5s linear;
-  -ms-transition: all .5s linear;
-  -o-transition: all .5s linear;
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
 }
 
-.team-member-btn.animate{
-  animation: introAnimation 1s ease-in-out 1000ms ;
-  -webkit-animation: introAnimation 1s ease-in-out 1000ms ;
+.team-member-btn.animate {
+  animation: introAnimation 1s ease-in-out 1000ms;
+  -webkit-animation: introAnimation 1s ease-in-out 1000ms;
 }
 
-.team-member-btn:hover{
+.team-member-btn:hover {
   background-color: #fff;
   color: #8169f1;
 }
@@ -279,37 +289,36 @@ html, body {
   }
 }
 
-.courses{
+.courses {
   display: flex;
   flex-direction: column;
   gap: 50px;
   padding: 50px 0px;
 }
 
-
-.courses-item-info{
+.courses-item-info {
   width: 50%;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.courses-item{
-  display:flex;
+.courses-item {
+  display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.courses-item-img{
+.courses-item-img {
   max-width: 200px;
   max-width: 200px;
 }
 
-.courses-item-title{
+.courses-item-title {
   font-size: 24px;
 }
 
-.modal{
+.modal {
   display: none;
   position: fixed;
   width: 100vw;
@@ -319,25 +328,25 @@ html, body {
   overflow: hidden;
 }
 
-.modal.active{
+.modal.active {
   display: flex;
 }
 
-.modal-body{
+.modal-body {
   background-color: #fff;
   overflow-y: scroll;
-  max-width:50%;
+  max-width: 50%;
   display: flex;
   flex-direction: column;
   height: auto;
 }
 
-.modal-body img{
+.modal-body img {
   margin: 0 auto;
   max-width: 100%;
 }
 
-.modal-btn{
+.modal-btn {
   cursor: pointer;
   height: 50px;
   width: 50px;
@@ -346,23 +355,23 @@ html, body {
   right: 25px;
 }
 
-@media screen and (max-width:990px) {
-  .features.style-4 .content{
+@media screen and (max-width: 990px) {
+  .features.style-4 .content {
     gap: 0;
     flex-direction: row;
     justify-content: space-around;
   }
-  .features-card{
+  .features-card {
     width: 30%;
   }
 }
 
-@media screen and (max-width:768px) {
-  .courses{
+@media screen and (max-width: 768px) {
+  .courses {
     align-items: center;
   }
-  .courses-item{
-    display:flex;
+  .courses-item {
+    display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
@@ -376,52 +385,50 @@ html, body {
     -moz-border-radius: 24px;
     -ms-border-radius: 24px;
     -o-border-radius: 24px;
-}
-
-  .courses-item-img{
-   order: 1;
   }
 
-  .courses-item-info{
+  .courses-item-img {
+    order: 1;
+  }
+
+  .courses-item-info {
     order: 2;
     width: 100%;
   }
-  
-  .team-member{
+
+  .team-member {
     flex-direction: column;
     gap: 15px;
     align-items: center;
   }
 
-  .team-member-info{
+  .team-member-info {
     order: 2;
     width: 80%;
   }
 
-  .features-card{
+  .features-card {
     width: 44%;
   }
-
 }
 
-
-@media screen and (max-width:525px) {
-   .features-card{
+@media screen and (max-width: 525px) {
+  .features-card {
     width: 80%;
-   }
+  }
 
-   .feature-content{
+  .feature-content {
     padding-left: 50px;
-   }
+  }
 
-   .modal-body{
+  .modal-body {
     max-width: 70%;
-   }
+  }
 
-   .modal-btn{
+  .modal-btn {
     top: 5px;
     right: 5px;
     width: 30px;
     height: 30px;
-   }
+  }
 }

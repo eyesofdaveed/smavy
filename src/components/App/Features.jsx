@@ -3,23 +3,23 @@ import Link from "next/link";
 import React from "react";
 
 const FeatureItem = ({ image, title, body }) => {
-
   return (
-    <div
-      className="features-card">
+    <div className="features-card">
       <div
         className="icon img-contain"
         style={{ height: "95px", width: "auto" }}
       >
         <img src={image} alt="" />
       </div>
-      <h6 className="feature-title" >
-        {title.text1} <br /> {title.text2}
-      </h6>
-      <div className={`feature-content`}>{body}</div>
-        <Link href={'/courses'}>
+      <div className="feature-content-body">
+        <div>
+          <h6 className="feature-title">{title.text1}</h6>
+          <div className={`feature-content`}>{body}</div>
+        </div>
+        <Link href={"/courses"}>
           <a className="pdf-btn ">Подробнее</a>
         </Link>
+      </div>
     </div>
   );
 };
