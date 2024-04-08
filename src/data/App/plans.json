@@ -7,7 +7,7 @@
     "features": [
       {
         "icon": "far fa-school",
-        "title": "Офлайн обучение",
+        "title": "Гибридное обучение",
         "active": true
       },
       {
@@ -41,7 +41,7 @@
     "features": [
       {
         "icon": "far fa-school",
-        "title": "Офлайн обучение",
+        "title": "Гибридное обучение",
         "active": true
       },
       {

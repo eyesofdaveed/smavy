@@ -20,14 +20,15 @@ const Team = () => {
       <main style={{ marginTop: "-12px" }}>
         <div className="team">
           {team.map((person) => (
-            <TeamItem 
+            <TeamItem
               key={person.name}
               name={person.name}
               position={person.position}
               description={person.description}
               img={person.img}
               pdf={person.cv}
-              link={person.link} />
+              link={person.link}
+            />
           ))}
         </div>
       </main>

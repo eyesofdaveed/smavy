@@ -7,7 +7,7 @@ import "swiper/css";
 
 const Screenshots = () => {
   const [loadSwiper, setLoadSwiper] = useState(false);
-  const [activeSlide, setActiveSlide] = useState(0)
+  const [activeSlide, setActiveSlide] = useState(0);
 
   useEffect(() => {
     setTimeout(() => {
@@ -15,7 +15,8 @@ const Screenshots = () => {
     }, 0);
   }, []);
 
-  return (
+  return null;
+  /*   return (
     <div className="screenshots style-4" data-scroll-index="4">
       <h2 className="team-title">Наша <span>команда</span></h2>
       <div className="screenshots-slider style-4">
@@ -68,7 +69,7 @@ const Screenshots = () => {
       </div>
       <img src="/assets/img/screenshots/hand.png" alt="" className="mob-hand" />
     </div>
-  );
+  ); */
 };
 
 export default Screenshots;
