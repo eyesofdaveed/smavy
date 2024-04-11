@@ -13,7 +13,7 @@ const Clients = () => {
         <div className="client-logos pb-70">
           <div className="row align-items-center">
             {clients.map((client, index) => (
-              <div className="col-6 col-lg-2" key={index}>
+              <div className="col-6 col-lg-3" key={index}>
                 <a href="#" className="img d-block">
                   <img src={client} alt="" />
                 </a>

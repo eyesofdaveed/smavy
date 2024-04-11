@@ -60,7 +60,7 @@ const Header = () => {
                     <small>{"Связь с нами"}</small>
                   </a>
                   <a
-                    href="https://youtu.be/mRzsWRFQmQ4"
+                    href="https://youtu.be/Z63VVv9eSYY"
                     data-lity
                     className="play-btn"
                     onClick={openVideo}

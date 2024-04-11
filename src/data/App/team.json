@@ -51,15 +51,11 @@
     "name": "Алмаз Анарбеков",
     "position": "Преподаватель по Веб разработке",
     "description": "Учитель по Веб разработке. Опыт в преподавании больше 3 лет.",
-    "link": "https://www.linkedin.com/in/uldayb",
+    "link": "https://www.linkedin.com/in/almaz-a-37a781137/",
     "cv": [
-      "/assets/team/ulday/1.png",
-      "/assets/team/ulday/2.png",
-      "/assets/team/ulday/3.png",
-      "/assets/team/ulday/4.png",
-      "/assets/team/ulday/5.png",
-      "/assets/team/ulday/6.png",
-      "/assets/team/ulday/7.png"
+      "/assets/team/almaz/1.webp",
+      "/assets/team/almaz/2.webp",
+      "/assets/team/almaz/3.webp"
     ],
     "img": "/assets/img/team/4.jpeg"
   },
@@ -68,14 +64,7 @@
     "position": "Преподаватель по Data Analysis with Python",
     "description": "Выпускник SDU по Вычислительным Наукам. Учитель языка программирования на Python со стажем 4 года",
     "link": "",
-    "cv": [
-      "/assets/team/rahat/1.png",
-      "/assets/team/rahat/2.png",
-      "/assets/team/rahat/3.png",
-      "/assets/team/rahat/4.png",
-      "/assets/team/rahat/5.png",
-      "/assets/team/rahat/6.png"
-    ],
+    "cv": ["/assets/team/bibarys/1.webp", "/assets/team/bibarys/2.webp"],
     "img": "/assets/img/team/5.jpg"
   },
 
@@ -83,8 +72,8 @@
     "name": "Айдын Мейрамханулы",
     "position": "Помощник учителя по веб разработке",
     "description": "Выпускник JIHC. Фриланс веб разработчик со стажем 2 года",
-    "link": "",
-    "cv": ["/assets/team/daniyar/1.png"],
+    "link": "https://www.linkedin.com/in/aidyn-meiramkhanuly-1b900626a/",
+    "cv": ["/assets/team/aidyn/1.webp"],
     "img": "/assets/img/team/7.jpg"
   }
 ]
