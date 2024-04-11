@@ -57,7 +57,9 @@ const Header = () => {
                     onClick={scrollToSection}
                     className="btn rounded-pill bg-blue4 fw-bold text-white me-4"
                   >
-                    <small>{"Связь с нами"}</small>
+                    <small>
+                      <a data-scroll-nav="8">{"Связь с нами"}</a>
+                    </small>
                   </a>
                   <a
                     href="https://youtu.be/Z63VVv9eSYY"
@@ -111,7 +113,7 @@ const Header = () => {
           channel="youtube"
           autoplay
           isOpen={isOpen}
-          videoId="mRzsWRFQmQ4"
+          videoId="Z63VVv9eSYY"
           onClose={() => setOpen(false)}
         />
       )}
